@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dasbor Interaktif Akreditasi Klinik</title>
+    <title>Hirarkie Standar dan Instrumen Akreditasi Klinik</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -60,11 +60,11 @@
 
     <div class="container mx-auto p-4 md:p-8 max-w-7xl">
         <header class="text-center mb-10">
-            <h1 class="text-3xl md:text-4xl font-bold text-slate-900">Dasbor Interaktif Akreditasi Klinik</h1>
+            <h1 class="text-3xl md:text-4xl font-bold text-slate-900">Hirarkie Standar dan Instrumen Akreditasi Klinik</h1>
             <p class="mt-2 text-lg text-slate-600">Alat bantu visual untuk memahami dan mempersiapkan standar akreditasi.</p>
             
             <div class="mt-6">
-                <a href="index2.html" class="inline-block bg-emerald-500 text-white font-bold py-2 px-6 rounded-full hover:bg-emerald-600 transition-transform transform hover:scale-105">
+                <a href="#" onclick="alert('Ini adalah tautan contoh ke halaman Indikator Mutu.'); return false;" class="inline-block bg-emerald-500 text-white font-bold py-2 px-6 rounded-full hover:bg-emerald-600 transition-transform transform hover:scale-105">
                     → Buka Dasbor Indikator Mutu
                 </a>
             </div>
@@ -72,7 +72,7 @@
 
         <nav class="mb-10">
             <div class="nav-container flex justify-center border border-slate-300 rounded-full p-1 bg-white/70 backdrop-blur-sm shadow-sm max-w-4xl mx-auto overflow-x-auto whitespace-nowrap">
-                <button id="tab-dashboard" class="tab-button inline-block flex-1 py-2 px-4 rounded-full text-sm md:text-base font-semibold transition-all duration-300">Dashboard</button>
+                <button id="tab-dashboard" class="tab-button inline-block flex-1 py-2 px-4 rounded-full text-sm md:text-base font-semibold transition-all duration-300">Hirarkie Standar</button>
                 <button id="tab-explorer" class="tab-button inline-block flex-1 py-2 px-4 rounded-full text-sm md:text-base font-semibold transition-all duration-300">Penjelajah Standar</button>
                 <button id="tab-inventory" class="tab-button inline-block flex-1 py-2 px-4 rounded-full text-sm md:text-base font-semibold transition-all duration-300">Inventarisasi Bukti</button>
                 <button id="tab-codes" class="tab-button inline-block flex-1 py-2 px-4 rounded-full text-sm md:text-base font-semibold transition-all duration-300">Kode Darurat</button>
@@ -93,6 +93,17 @@
                     <div class="chart-container">
                         <canvas id="babDistributionChart"></canvas>
                     </div>
+                </div>
+
+                <!-- Bagian Unduh Dokumen PDF Resmi dari GitHub -->
+                <div class="bg-white p-6 rounded-xl shadow-lg mb-12 text-center border-t-4 border-sky-500 fade-in">
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Dokumen Referensi Resmi</h3>
+                    <p class="text-slate-600 mb-6">Unduh dokumen asli <strong>Standar dan Instrumen Akreditasi Klinik (Kemenkes RI Tahun 2023)</strong> dalam format PDF.</p>
+                    <!-- Sesuaikan href di bawah ini dengan nama file PDF yang Anda unggah ke GitHub -->
+                    <a href="https://alfan-23.github.io/Sehati---AKREDITASI-KLINIK/Standar_Akreditasi_Klinik.pdf" target="_blank" download class="inline-flex items-center bg-sky-600 text-white font-bold py-2 px-6 rounded-full hover:bg-sky-700 transition-colors shadow-md">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                        Unduh Dokumen Standar (PDF)
+                    </a>
                 </div>
 
                 <section class="text-center mb-6">
